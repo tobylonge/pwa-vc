@@ -1,5 +1,5 @@
 
-    importScripts('../sw-toolbox.js');
+    importScripts('sw-toolbox.js');
 
     const precacheFiles = [
         //html files
