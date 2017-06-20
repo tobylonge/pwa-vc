@@ -20,21 +20,21 @@
         'new-mobile/cart-empty.html',
         'new-mobile/add-photo.html',
         'new-mobile/all-photos.html',
-        'new-mobile/all-reviews.html',
+        'new-mobile/all-reviews.html'
 
         //css files
-        'css/new-mobile/core.css',
-        'css/new-mobile/pages/lite-home-base.css',
+        // 'css/new-mobile/core.css',
+        // 'css/new-mobile/pages/lite-home-base.css',
 
         //js files
-        'app.js',
-        'toast.js',
-        'offline.js',
-				'manifest.json',
-        'js/vendor/custom.modernizr.js',
-        'js/min/app-nmobile.min.js',
-        'js/vendor/jquery-1.10.2.min.js',
-				'js/vendor/OneSignalSDK.js',
+        // 'app.js',
+        // 'toast.js',
+        // 'offline.js',
+				// 'manifest.json',
+        // 'js/vendor/custom.modernizr.js',
+        // 'js/min/app-nmobile.min.js',
+        // 'js/vendor/jquery-1.10.2.min.js',
+				// 'js/vendor/OneSignalSDK.js',
 
         //img files
         // 'img/vconnect-logo-desktop-white.png',
