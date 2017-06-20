@@ -27,10 +27,10 @@
         'css/new-mobile/pages/lite-home-base.css',
 
         //js files
-        // 'app.js',
-        // 'toast.js',
-        // 'offline.js',
-				// 'manifest.json',
+        'app.js',
+        'toast.js',
+        'offline.js',
+				'manifest.json',
         // 'js/vendor/custom.modernizr.js',
         // 'js/min/app-nmobile.min.js',
         // 'js/vendor/jquery-1.10.2.min.js',
