@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js height-fix" lang="en"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>
+				Login Page &middot; VConnect Mobile
+	 </title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta name="msapplication-TileImage" content="/img/v-logo-192x192.png">
+  	<meta name="msapplication-TileColor" content="#ff6d00">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="application-name" content="VConnect">
+		<meta name="theme-color" content="#ff6d00">
+		<link rel="manifest" href="/manifest.json">
+		<link rel="icon" sizes="192x192" href="/img/v-logo-192x192.png">
+
+		<!-- Add to home screen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="#ff6d00">
+		<meta name="apple-mobile-web-app-title" content="VConnect">
+		<link rel="apple-touch-icon" href="/img/v-logo-192x192.png">
+		<script type="text/javascript" src="../app.js" async></script>
+		<script type="text/javascript" src="../offline.js" async></script>
+		<script type="text/javascript" src="../toast.js" async></script>
+
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+			<link rel="stylesheet" href="/css/new-mobile/core.css">
+			<link rel="stylesheet" href="/css/new-mobile/pages/lite-login-base.css">
+		<style>
+			.mobile-header-wrapper .search-form-wrapper{line-height:0;border-bottom:0.1px solid #ff6d00}.mobile-header-wrapper .search-form-wrapper button{margin:0}.mobile-header-wrapper .placeholder-header{height:6.3125rem;position:relative;width:100%}.mobile-header-wrapper .scroll-header{position:fixed;width:100%;z-index:9800;top:0}.mobile-header-wrapper .search-section ul{margin:0;padding:0;list-style-type:none}.mobile-header-wrapper .search-section .left-nav{float:left}.mobile-header-wrapper .search-section li{float:left;position:relative}.mobile-header-wrapper .search-section .has-search{position:absolute;top:0.4375rem;left:2.5rem;right:2.5rem;z-index:1}.mobile-header-wrapper .tabbar{background:#ff6d00;height:3.125rem}.mobile-header-wrapper .tabbar .title-area{float:left}.mobile-header-wrapper .tabbar .title-area .menu-link{float:left;color:#fff;font-size:1.375rem;line-height:3.125rem;height:3.125rem;padding:0 0.3125rem}.mobile-header-wrapper .tabbar .title-area .logo{float:left;max-width:6.25rem;line-height:3.125rem;height:3.125rem}.mobile-header-wrapper .tabbar-section .right-nav{float:right;list-style:none;margin:0}.mobile-header-wrapper .tabbar-section .right-nav li{float:left;line-height:3.125rem;height:3.125rem}.mobile-header-wrapper .tabbar-section .right-nav li.active a{background:#e66200}.mobile-header-wrapper .tabbar-section .right-nav li a{position:relative;display:inline-block;color:#fff;padding:0 0.625rem;font-size:0.875rem;height:3.125rem}.mobile-header-wrapper .tabbar-section .right-nav li .counter{position:absolute;top:0.4375rem;right:0.3125rem;background:#00A0B2;border-radius:50%;width:auto;min-width:0.9375rem;height:0.9375rem;display:block;font-size:0.625rem;text-align:center;line-height:0.9375rem}
+		</style>
+	</head>
+	<body class="gray-background">
+		<!-- Toast msg's  -->
+		<div class="toast__container" style="z-index:9999;"></div>
+
+		<div class="nwrapper">
+
+
+
+<div class="nlogin-wrapper">
+	<div class="row">
+		<div class="small-12 columns">
+			<div class="nlogin-content-wrapper">
+				<a href="index.html" class="nlogin-logo-wrapper">
+					<img src="/img/new-mobile/vconnect-logo-desktop.png" alt="">
+				</a>
+				<div class="nlogin-social-wrapper">
+					<div class="nsocial-title">Login With:</div>
+					<div class="row">
+						<div class="small-6 columns">
+							<a href="#" class="btn expand fb"><i class="icon-facebook"></i> Facebook</a>
+						</div>
+						<div class="small-6 columns">
+							<a href="#" class="btn expand gp"><i class="icon-gplus"></i> Google +</a>
+						</div>
+					</div>
+				</div>
+				<div class="row text-center">
+					<div class="small-12 columns">
+						<div class="nsocial-seperator">or</div>
+					</div>
+				</div>
+				<div class="nlogin-signform-wrapper">
+					<form>
+						<div class="row">
+							<div class="small-12 columns">
+								<label>
+									<input type="text" placeholder="Email Address" />
+								</label>
+							</div>
+							<div class="small-12 columns">
+								<label class="nlogin-label">
+									<input type="text" placeholder="Password" />
+									<a href="#">Show</a>
+								</label>
+							</div>
+							<div class="small-12 columns">
+								<button class="btn expand">Login</button>
+							</div>
+						</div>
+					</form>
+					<a href="#" class="text-center nlogin-forgot-password-link">Forgot Password?</a>
+				</div>
+				<div class="nlogin-signup-wrapper">
+					<a href="signup.html" class="ncreat-link">Don't have an account? <span>Sign Up</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+			
+			
+			<div id="searchModal" class="search-wrapper pageslidin ">
+				<div class="pageslidin-header clearfix">
+					<a href="#!" class="pageslidin-back ">
+						<i class="icon-left-small"></i>
+					</a>
+					<div class="pageslidin-title">
+						Search in lagos
+					</div>
+				</div>
+				
+				<div class="searchbox-content-wrapper pageslidin-content-wrapper">
+					<form action="/qsearch" data-vc-search data-vc-title="Olako">
+						<div class="row collapse">
+							<div class="columns small-12">
+								<input type="search" name="sq" class="searchterm" placeholder="&#x1f50d;  Search for businesses, products or services..." data-vc-search-term>
+							</div>
+							<div class="columns small-12">
+								<div class="pre"><i class="icon-location"></i></div>
+								<input type="search" name="sl" class="searchlocation" placeholder="Location e.g. Surulere" value="Lagos" data-vc-search-location>
+							</div>
+							<div class="columns small-12">
+								<button type="submit" class="searchbtn btn expand nripple-wrapper">
+									<div class="nripple js-ripple">
+										<span class="nripple__circle"></span>
+									</div>
+									Search
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="recent-searches nmitem">
+					<div class="nmtitle clearfix">
+						<div class="left">
+							Recent Searches
+						</div>
+						<div class="right">
+							<a href="#">Clear</a>
+						</div>
+					</div>
+					<ul class="small-block-grid-1 nmitem-list">
+						<li>
+							<a href="business-listing.html" class="nmlist-item clearfix nripple-wrapper">
+								<div class="nripple js-ripple">
+									<span class="nripple__circle"></span>
+								</div>
+								<div class="left nmlist-item-bizname">
+									Eko Hotels & Suites
+								</div>
+								<div class="nmlist-item-close">
+									<i class="icon-right"></i>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="product-listing.html" class="nmlist-item clearfix nripple-wrapper">
+								<div class="nripple js-ripple">
+									<span class="nripple__circle"></span>
+								</div>
+								<div class="left nmlist-item-bizname">
+									Samsung Phones
+								</div>
+								<div class="nmlist-item-close">
+									<i class="icon-right"></i>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="business-listing.html" class="nmlist-item clearfix nripple-wrapper">
+								<div class="nripple js-ripple">
+									<span class="nripple__circle"></span>
+								</div>
+								<div class="left nmlist-item-bizname">
+									Eko Hotels & Suites
+								</div>
+								<div class="nmlist-item-close">
+									<i class="icon-right"></i>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="popular-searches nmitem searches">
+					<div class="nmtitle clearfix">
+						<div class="left">
+							Popular Searches
+						</div>
+					</div>
+					<ul class="small-block-grid-1 nmitem-list">
+						<li>
+							<a href="product-listing.html" class="nmlist-item clearfix nripple-wrapper">
+								<div class="nripple js-ripple">
+									<span class="nripple__circle"></span>
+								</div>
+								<div class="left nmlist-item-bizname">
+									Samsung Phones
+								</div>
+								<div class="nmlist-item-close">
+									<i class="icon-right"></i>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="business-listing.html" class="nmlist-item clearfix nripple-wrapper">
+								<div class="nripple js-ripple">
+									<span class="nripple__circle"></span>
+								</div>
+								<div class="left nmlist-item-bizname">
+									Eko Hotels & Suites
+								</div>
+								<div class="nmlist-item-close">
+									<i class="icon-right"></i>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="business-listing.html" class="nmlist-item clearfix nripple-wrapper">
+								<div class="nripple js-ripple">
+									<span class="nripple__circle"></span>
+								</div>
+								<div class="left nmlist-item-bizname">
+									Eko Hotels & Suites
+								</div>
+								<div class="nmlist-item-close">
+									<i class="icon-right"></i>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+			<div class="preloader-timeline-position">
+				<div id="accountModal" class="account-wrapper pageslidin">
+					<div class="pageslidin-header clearfix">
+						<a href="#!" class="pageslidin-back">
+								<i class="icon-left-small"></i>
+						</a>
+						<div class="pageslidin-title">
+							My Account
+						</div>
+					</div>
+			
+			
+					<div class="account-content-wrapper mb-50 pageslidin-content-wrapper">
+						<div class="account-user-details">
+							<div class="account-user-image" data-vc-placeholder-initials="Dante Lex"></div>
+							<div class="account-user-info">
+								<div class="account-user-name">Dante Lex</div>
+								<div class="account-user-links">
+									<a href="profile.hbs">View Profile</a>
+									<a href="login.html">Logout</a>
+								</div>
+							</div>
+						</div>
+						<div class="personal-content nmitem">
+							<div class="nmtitle clearfix">
+								<div class="left">
+									Personal
+								</div>
+							</div>
+							<ul class="small-block-grid-1 nmitem-list">
+								<li>
+									<a href="#" class="nmlist-item clearfix nripple-wrapper">
+										<div class="left nmlist-item-bizname">
+											Activity
+										</div>
+										<div class="nmlist-item-close">
+											<span class="counter">3</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="user-settings.html" class="nmlist-item clearfix nripple-wrapper">
+										<div class="left nmlist-item-bizname">
+											Settings
+										</div>
+										<div class="nmlist-item-close">
+											<i class="icon-cog"></i>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="business-content nmitem">
+							<div class="nmtitle clearfix">
+								<div class="left">
+									For businesses
+								</div>
+							</div>
+							<ul class="small-block-grid-1 nmitem-list">
+								<li>
+									<a href="#" class="nmlist-item clearfix nripple-wrapper">
+										<div class="nripple js-ripple">
+											<span class="nripple__circle"></span>
+										</div>
+										<div class="left nmlist-item-bizname">
+											Business Owners
+										</div>
+										<div class="nmlist-item-close">
+											<i class="icon-right"></i>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="nmlist-item clearfix nripple-wrapper">
+										<div class="nripple js-ripple">
+											<span class="nripple__circle"></span>
+										</div>
+										<div class="left nmlist-item-bizname">
+											My Orders
+										</div>
+										<div class="nmlist-item-close">
+											<i class="icon-right"></i>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="nmlist-item clearfix nripple-wrapper">
+										<div class="nripple js-ripple">
+											<span class="nripple__circle"></span>
+										</div>
+										<div class="left nmlist-item-bizname">
+											Track your order
+										</div>
+										<div class="nmlist-item-close">
+											<i class="icon-right"></i>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="nmlist-item clearfix nripple-wrapper">
+										<div class="nripple js-ripple">
+											<span class="nripple__circle"></span>
+										</div>
+										<div class="left nmlist-item-bizname">
+											Sell on VConnect
+										</div>
+										<div class="nmlist-item-close">
+											<i class="icon-right"></i>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="nmlist-item clearfix nripple-wrapper">
+										<div class="nripple js-ripple">
+											<span class="nripple__circle"></span>
+										</div>
+										<div class="left nmlist-item-bizname">
+											Find a business
+										</div>
+										<div class="nmlist-item-close">
+											<i class="icon-search-alt"></i>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="nmlist-item clearfix nripple-wrapper">
+										<div class="nripple js-ripple">
+											<span class="nripple__circle"></span>
+										</div>
+										<div class="left nmlist-item-bizname">
+											Register a business
+										</div>
+										<div class="nmlist-item-close">
+											<i class="icon-right"></i>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="helpline-content nmitem">
+							<div class="nmtitle clearfix">
+								<div class="left">
+									Helpline
+								</div>
+							</div>
+							<ul class="small-block-grid-1 nmitem-list">
+								<li>
+									<a href="tel:07080700700" class="nmlist-item clearfix nripple-wrapper">
+										<div class="nripple js-ripple">
+											<span class="nripple__circle"></span>
+										</div>
+										<div class="left nmlist-item-bizname">
+											Call
+										</div>
+										<div class="nmlist-item-close">
+											<i class="icon-phone"></i>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="mailto:customercare@vconnect.com" class="nmlist-item clearfix nripple-wrapper">
+										<div class="nripple js-ripple">
+											<span class="nripple__circle"></span>
+										</div>
+										<div class="left nmlist-item-bizname">
+											Mail
+										</div>
+										<div class="nmlist-item-close">
+											<i class="icon-mail"></i>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="preloader-timeline-position">
+				<div id="shareModal" class="nshare-wrapper pageslidin">
+					<div class="pageslidin-header clearfix">
+						<a href="#!" class="pageslidin-back">
+							<i class="icon-left-small"></i>
+						</a>
+						<div class="pageslidin-title">
+							Share
+						</div>
+					</div>
+			
+			
+					<div class="nshare-content-wrapper pageslidin-content-wrapper">
+						<div class="reviewbox-complete-actions form-block">
+							<div class="mb-10">Share This:</div>
+							<a href="#" class="btn btn-fb expand nripple-wrapper" data-vc-social="facebook" data-vc-socialUrl="http://www.vconnect.com" data-vc-socialTitle="Vconnect" target="_blank">
+								<div class="nripple js-ripple">
+									<span class="nripple__circle"></span>
+								</div>
+								Facebook
+							</a>
+							<a href="#" class="btn btn-tw nripple-wrapper expand" data-vc-social="twitter" data-vc-socialUrl="http://www.vconnect.com" data-vc-socialTitle="Vconnect" data-vc-socialHashtags="#vconnect" data-vc-socialHandle="@vconnectng" target="_blank">
+								<div class="nripple js-ripple">
+									<span class="nripple__circle"></span>
+								</div>
+								Twitter
+							</a>
+							<a href="#" class="btn btn-gp nripple-wrapper expand" data-vc-social="goopleplus" data-vc-socialUrl="http://www.vconnect.com" data-vc-socialTitle="Vconnect" target="_blank">
+								<div class="nripple js-ripple">
+									<span class="nripple__circle"></span>
+								</div>
+								Google+
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="preloader-timeline-position">
+				<div id="addToHomeModal" class="addtohome-wrapper pageslidin orangeback">
+			
+			
+					<div class="addtohome-content-wrapper mb-50 pageslidin-content-wrapper">
+						<div class="addtohome-content">
+							<img class="addtohome-content-image" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODEiIGhlaWdodD0iOTEiIHZpZXdCb3g9IjAgMCA4MSA5MSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZT0iI2ZmZiIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJtNzkuNDIgMTIuODMybC02LjU1OC0xMC45MS05LjI0MiA4LjY5IiBzdHJva2Utd2lkdGg9IjEuNyIvPjxwYXRoIGQ9Im03Mi41IDRzLTQuMzYgNzEuOTAyLTcxIDg2IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L2c+PC9zdmc+" alt="tab direction">
+							<div class="addtohome-content-text">
+								<div class="addtohome-content-addtext">Add VConnect to Homescreen</div>
+								<div class="addtohome-content-taptext">Tap
+								<img class="addtohome-content-tapimage" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNCIgaGVpZ2h0PSIxNyIgdmlld0JveD0iMCAwIDQgMTciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBzdHJva2U9IiNlYWVhZWEiIGQ9Ik04LjAzMyAyMC44NkgtNFYtMy4zNjRIOC4wMzNWMjAuODZ6Ii8+PHBhdGggZD0ibTIuMDIgNC43MWMxLjEwMyAwIDIuMDEtLjkwOCAyLjAxLTIuMDIgMC0xLjExLS45MDItMi4wMi0yLTIuMDItMS4xMDMuMDAxLTIuMDEuOTExLTIuMDEgMi4wMiAwIDEuMTEuOTA0IDIuMDIgMi4wMSAyLjAyem0wIDIuMDJjLTEuMTAzIDAtMi4wMS45MDYtMi4wMSAyLjAyIDAgMS4xMS45MDQgMi4wMiAyLjAxIDIuMDIgMS4xMDMgMCAyLjAxLS45MDggMi4wMS0yLjAyIDAtMS4xMS0uOTAyLTIuMDItMi0yLjAyem0wIDYuMDVjLTEuMTAzIDAtMi4wMS45MDgtMi4wMSAyLjAyIDAgMS4xMS45MDQgMi4wMiAyLjAxIDIuMDIgMS4xMDMgMCAyLS45MDggMi0yLjAyIDAtMS4xMS0uOTAyLTIuMDItMi0yLjAyIiBmaWxsPSIjZmZmIi8+PC9nPjwvc3ZnPg==" alt="tab click">
+								to bring up your browser menu and select 'Add to homescreen' to pin the VConnect mobile web app</div>
+								<a href="#!" class="addtohome-content-button btn">Continue</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Footer section (start) -->
+			<footer id="footerModal" class="mobile-footer-wrapper pageslidin footer new-footer">
+				<div class="pageslidin-header clearfix">
+					<a href="#!" class="pageslidin-back">
+						<i class="icon-left-small"></i>
+					</a>
+				</div>
+				<div class="footer-link-content pageslidin-content-wrapper">
+					<div class="bottomup-popup" data-alert>
+						<a href="#">
+							<img data-vc-lazy="/img/new-mobile/pencil-banner.jpg" alt="ad">
+						</a>
+						<a href="#" class="close">&times;</a>
+					</div>
+
+					<div class="mobile-footer-banner" >
+						<div class="mobile-container text-center">
+							<a href="#" target="_blank">
+								<img data-vc-lazy="/img/new-mobile/home_footer_ad.jpg" alt="ad">
+							</a>
+						</div>
+					</div>
+
+					<div class="mobile-about-essay pt-20">
+						<div class="row">
+							<div class="columns medium-12 mobile-seo-text">
+								<p class="mobile-seo-text"><strong>Demo text: Online shopping in Nigeria</strong>
+								Forget crowded malls, endless maze-like parking lots and long lines. From clothes to mobiles phones, you can buy just about anything online. And when we say say online, we mean VConnect.com, one of Nigeria's best online shopping destinations.</p>
+
+								<p class="mobile-seo-text"><strong>Shopping on VConnect.com</strong>
+								What is it like to shop on VConnect you ask? Well, let's make it simple for you. Say you have to buy a baby shower present for your expecting friend, all you need to do in log into VConnect.com and browse through the countless gifting options available for you. And that's not all, you can have the product of your choice gift wrapped with your own personalized message and have it delivered right to your friend's doorstep. Awesome, right? No more trips to the mall. No more getting stuck in endless traffic.</p>
+
+								<p class="mobile-seo-text"><strong>Enjoy with VConnect</strong>
+								At VConnect, we believe that a wish is a desire that should be fulfilled for every Nigerian. And that is why you'll see that there's always something for you to shop for. Whether it's an IIT-JEE entrance book or the latest Mi phone, you'll find it here on VConnect. Home to a huge collection of home furnishing products, appliances, footwear, television, clothes, mobiles, books, cameras and laptops, the list is as endless as the potential long line that you would end up in should you happen to brave the crowd at the end of your shopping trip at a mall.</p>
+
+								<p class="mobile-seo-text"><strong>Enjoy delightful prices</strong>
+								For 'Every Wish Fulfilled' to happen, we at VConnect understand that prices can put you off. And that is why we have round-the-clock discounts and amazing prices for you to enjoy. With options like Deals-of-the-Day, find products such as apparel, toys, refrigerators, air-conditioners and healthy and beauty products at unbelievably low prices.</p>
+
+								<p class="mobile-seo-text"><strong>Happy and safe shopping every time</strong>
+								When you log into VConnect.com, you will find that all the fun elements of shopping in malls have been exceptionally replicated. The easy-to-use interface that includes filters, compare options, buying guides, interactive descriptions and reviews, you'll see that shopping on VConnect is fun and easy.</p>
+
+								<p class="mobile-seo-text">Dedicated to fulfilling your wishes without any hassle, VConnect ensures that everything from placing an order to having it delivered right to doorstep goes smoothly and efficiently. We at VConnect understand that your personal information such as bank details are of utmost importance and because of that all your online payment, whether it is through credit/debit card or net banking transactions, are safe and secure. Still apprehensive about paying online, we got you covered with our ever-popular cash-on-delivery option. And with fast delivery options, you'll have your product in your hand in no time. Apart from all that, should you be unhappy with your order, we have got excellent exchange and replacement policies that will surely change your frown into a big smile.</p>
+
+								<p class="mobile-seo-text"><strong>Shop on the App</strong>
+								Oh yes, we're available on the small screen too. Just go to Google Play Store or Apple App Store, download the VConnect app onto your smartphone or tablet, and enjoy shopping on the go. The app has an interactive and easy user interface and you'll be able to enjoy app-only deals, get notifications about offers and order status, and plenty more. Download the app and you'll know what we are talking about.</p>
+
+								<p class="mobile-seo-text">So shop online at VConnect.com and get your 'Every Wish Fulfilled.'</p>
+							</div>
+						</div>
+					</div>
+					<div class="mobile-footer content-footer">
+						<div class="footer-row footer-links">
+							<div class="row">
+								<div class="small-6 columns footer-item-list">
+									<ul class="item-list no-bullet">
+										<li>Browse Vconnect</li>
+										<li><a href="#">Browse by categories</a></li>
+										<li><a href="#">Browse by products</a></li>
+										<li><a href="#">Browse by services</a></li>
+										<li><a href="#">Browse by businesses</a></li>
+									</ul>
+								</div>
+								<div class="small-6 columns footer-item-list">
+									<ul class="item-list no-bullet">
+										<li>Get to know us</li>
+										<li><a href="#">About Us</a></li>
+										<li><a href="#">Press</a></li>
+										<li><a href="#">Careers</a></li>
+										<li><a href="#">Mobile Apps</a></li>
+										<li><a href="#">Contact Us</a></li>
+									</ul>
+								</div>
+								<div class="small-6 columns footer-item-list">
+									<ul class="item-list no-bullet">
+										<li>Discover</li>
+										<li><a href="#">Our Blog</a></li>
+										<li><a href="#">Find Business</a></li>
+										<li><a href="#">Marketplace</a></li>
+										<li><a href="#">FAQs</a></li>
+									</ul>
+								</div>
+								<div class="small-6 columns footer-item-list">
+									<ul class="item-list no-bullet">
+										<li>Countries</li>
+										<li><img data-vc-lazy="/img/new-mobile/flag-nigeria.jpg" alt="flag nigeria"> &nbsp;<a href="#">Nigeria</a></li>
+										<li><img data-vc-lazy="/img/new-mobile/flag-ghana.jpg" alt="flag ghana"> &nbsp;<a href="#">Ghana</a></li>
+									</ul>
+								</div>
+								<div class="small-12 columns footer-item-list">
+									<ul class="item-list no-bullet">
+										<li>VConnect for Businesses</li>
+										<li><a href="#">Register Your Business</a></li>
+										<li><a href="#">Claim Your Business</a></li>
+										<li><a href="#">Advertise With Us</a></li>
+										<li><a href="#">Sell With Us</a></li>
+										<li><a href="#">Business Blog</a></li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+						<div class="footer-row footer-subscribe">
+							<div class="">
+								<p class="text-left lead email-lead">BE IN THE KNOW.</p>
+								<p class="email-sub">Get up-to-date information on deals, products, and businesses around you from our weekly newsletter. You can unsubscribe at anytime.</p class="email-sub">
+								<form action="#" class="footer-form">
+									<div class="row">
+										<div class="mobile-container">
+											<label for="#" class="make-placeholder">Email address</label>
+											<div class="row collapse">
+												<div class="small-9 columns"><input class="subscribe-form" type="text" placeholder="email address"></div>
+												<div class="small-3 columns"><button type="submit" class="button btn tiny postfix radius">Register</button></div>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="footer-row">
+							<div class="columns small-12">
+								<div class="">
+								<div class="sku-of-categories">
+										<p class="sku-categories-head">TOP CATEGORIES</p>
+										<ul class="sku-categories">
+											<li><a href="#">MOBILE: Moto E</a> / <a href="#">Samsung</a> / <a href="#">Apple</a> / <a href="#">LG</a> / <a href="#">View all</a></li>
+											<li><a href="#">HOME: Bedsheets </a>/ <a href="#">Curtain </a>/ <a href="#">Lighting </a>/ <a href="#">Kitchen Tools </a>/ <a href="#">View all</a></li>
+											<li><a href="#">LARGE APPLIANCES: Air Conditioners </a>/ <a href="#">Washing Machine </a>/ <a href="#">View all</a></li>
+											<li><a href="#">CAMERA: Nikon Camera</a> / <a href="#">Canon Camera</a> / <a href="#">Sony Camera</a> / <a href="#">Samsung Camera</a> / <a href="#">View all</a></li>
+											<li><a href="#">LAPTOPS: Apple Laptop</a> / <a href="#">HP Laptop</a> / <a href="#">Samsung Laptop</a> / <a href="#">Lenovo Laptop</a> / <a href="#">View all</a></li>
+											<li><a href="#">TVS: Sony TV</a> / <a href="#">Samsung TV</a> / <a href="#">LG TV</a> / <a href="#">Panasonic TV</a> / <a href="#">View all</a></li>
+											<li><a href="#">TABLETS: Windows Surface</a> / <a href="#">Android Tablets</a> / <a href="#">Samsung Tablets</a> / <a href="#">Apple Tablets</a> / <a href="#">View all</a></li>
+											<li><a href="#">WATCHES: Casio Watches</a> / <a href="#">Swatch Watches</a> / <a href="#">Lenovo Watches</a> / <a href="#">Diesel Watches</a> / <a href="#">View all</a></li>
+											<li><a href="#">CLOTHING: Levis Jeans</a> / <a href="#">Denim</a> / <a href="#">Formal Shirts </a> / <a href="#">View all</a></li>
+											<li><a href="#">FOOTWEAR: Shoes</a> / <a href="#">Casual Shoes</a> / <a href="#">Formal Shoes</a> / <a href="#">Nike</a> / <a href="#">Adidas</a> / <a href="#">View all</a></li>
+										</ul>
+								</div>
+								</div>
+							</div>
+						</div>
+						<div class="footer-row text-center">
+							<div class="columns small-12">
+								<img class="" data-vc-lazy="/img/new-mobile/checkout-payment.png" class="" alt="payment method">
+								<p class="delivery-patners">Delivery Patners</p>
+								<img data-vc-lazy="/img/new-mobile/delivery-patners-small.png" alt="delivery partners">
+							</div>
+						</div>
+					</div>
+					<div class="mobile-footer global-footer">
+						<div class="footer-row">
+							<div class="">
+								<div class="row top-links footer-centered">
+									<div class="columns small-12">
+										<ul class="inline-list footer-margin">
+											<li><a href="#">About</a></li>
+											<li><a href="#">Contact</a></li>
+											<li><a href="#">Feedback</a></li>
+											<li><a href="#">Terms</a></li>
+											<li><a href="#">Privacy</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="row footer-copy footer-centered no-margin-bottom">
+									<p class="copyright">&copy; 2014 Vconnect Global Services Limited.</p>
+									<p class="copyright switch-version"><a href="#">Switch to Desktop version</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!-- Toast msg's  -->
+			</footer>
+		</div>
+
+
+			<!--  Broswer feature detection with Modernizer      -->
+			<script type="text/javascript" src="/js/vendor/custom.modernizr.js" async></script>
+			<script type="text/javascript">
+				window.jQuery || document.write('<script src="/js/vendor/jquery-1.10.2.min.js"><\/script>')
+			</script>
+			<script type="text/javascript" src="/js/min/app-nmobile.min.js"></script>
+			<script src="/js/vendor/OneSignalSDK.js" async></script>
+			<script type="text/javascript">
+				app.init({
+					allReviewsURL: '/proxy/reviews/data.json',
+					helpfulReviewsURL: '/proxy/reviews/data.json',
+					env: 'development',
+					termsURL: '../test.json?%QUERY',
+					locationsURL: '../test.json?%QUERY',
+					nTermsURL: '/terms-combined.json?%QUERY',
+					nTermsCategoryURL: '/terms-cat.json?%QUERY',
+					nRelatedProductsURL: '/terms-combined.json?%QUERY',
+					destChoiceURL: '/dest-choice.json',
+					isMobile: true,
+					siteRoot: '/',
+					loggedIn: true,
+					user: {
+						id: 1423232,
+						email: 'xxx@yy.co'
+					},
+					sitesearch: {
+						nLocationURL: '/_staticapi/nlocation.json?%QUERY',
+						nKeywordsURL: '/terms-combined.json?%QUERY',
+						popularSearchesTermList: ['Restaurants', 'Schools', 'Spas', 'Nightlife', 'Hotels'],
+						popularSearchesLocationList: ['Current Location', 'Lagos', 'Rivers', 'Abuja', 'Kano', 'Kaduna', 'Benin'],
+						destChoiceURL: '/dest-choice.json',
+					},
+					searchterm: {
+						popularSearchesList: ['Lumia 920', 'Windows 10', 'How to ride a bicycle', 'Microsoft HoloLens', 'From init']
+					},
+					createlist: {
+						businessSearchURL: '../_staticapi/createlist-business-search.json?%QUERY',
+						createListURL: '../_staticapi/search.json',
+						postSaveURL: '../homepage.html',
+					},
+					reviewitem: {
+						helpfulURL: '../_staticapi/review-helpful.json',
+						reportAbuseURL: '../_staticapi/review-report-abusive.json',
+					},
+					checkuserauth: {
+						mobileUrl: '/mobile/login.html'
+					},
+					reviewbox: {
+						// rateReviewURL: rateBusinessReviewUR || rateProductReviewURL,
+						rateBusinessReviewURL: '/_staticapi/login.json',
+						rateProductReviewURL: '/_staticapi/login.json',
+
+					},
+					listItem: {
+						curatedURL: '../_staticapi/login.json',
+						deleteListUrl: '../_staticapi/delete-list.json',
+						redirectAfterDelete : '../curated-lists.html',
+					},
+					followButton: {
+						followURL: '/userdashboardweb/follow?customerid=',
+					},
+				});
+			</script>
+
+
+		<!--[if lt IE 10]>
+			<script type="text/javascript">
+				loadJs([{'src':"js/min/placeholder-fix.min.js",'defer':'defer', 'async': 'async'}] );
+			</script>
+		<![endif]-->
+	</body>
+</html>
