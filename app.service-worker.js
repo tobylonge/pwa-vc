@@ -20,11 +20,11 @@
         'new-mobile/cart-empty.html',
         'new-mobile/add-photo.html',
         'new-mobile/all-photos.html',
-        'new-mobile/all-reviews.html'
+        'new-mobile/all-reviews.html',
 
         //css files
-        // 'css/new-mobile/core.css',
-        // 'css/new-mobile/pages/lite-home-base.css',
+        'css/new-mobile/core.css',
+        'css/new-mobile/pages/lite-home-base.css',
 
         //js files
         // 'app.js',
