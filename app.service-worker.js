@@ -31,10 +31,10 @@
         'toast.js',
         'offline.js',
 				'manifest.json',
-        // 'js/vendor/custom.modernizr.js',
-        // 'js/min/app-nmobile.min.js',
-        // 'js/vendor/jquery-1.10.2.min.js',
-				// 'js/vendor/OneSignalSDK.js',
+        'js/vendor/custom.modernizr.js',
+        'js/min/app-nmobile.min.js',
+        'js/vendor/jquery-1.10.2.min.js',
+				'js/vendor/OneSignalSDK.js',
 
         //img files
         // 'img/vconnect-logo-desktop-white.png',
