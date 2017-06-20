@@ -5,8 +5,8 @@
         //html files
 
         './new-mobile/',
-        './new-mobile/index.html',
-        './new-mobile/product-details.html',
+        '../new-mobile/index.html',
+        'new-mobile/product-details.html',
         './new-mobile/product-listing.html',
         './new-mobile/signup.html',
         './new-mobile/business-details.html',
