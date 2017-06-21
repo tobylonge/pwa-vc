@@ -31,6 +31,7 @@
         'toast.js',
         'offline.js',
 				'manifest.json',
+        'chrome-manifest.json',
         'js/vendor/custom.modernizr.js',
         'js/min/app-nmobile.min.js',
         'js/vendor/jquery-1.10.2.min.js',
